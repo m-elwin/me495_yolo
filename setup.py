@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'yolo_pose = me495_yolo.pose:main'
+            'yolo = me495_yolo.yolo:main'
         ],
     },
 )
