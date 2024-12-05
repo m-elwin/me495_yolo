@@ -14,3 +14,9 @@
 2. Create a workspace and clone this repository. Before you build it, source the =yolo_ws=
 
 3. See [[https://nu-msr.github.io/ros_notes/ros2/computer_vision.html]] for more details.
+
+* Nodes
+The =me495_yolo= package contains one node called =yolo=.
+1. It subscribes to the =image= topic
+2. It outputs the model results on the =new_image= topic
+3. The =model= parameter lets you choose whichever [[docs.ultralytics.com][Yolo Model]] you would like, defaulting to =yolo11n.pt=
