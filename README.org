@@ -1,0 +1,16 @@
+* Yolo With ROS
+- Basic ROS setup for using https://github.com/ultralytics/ultralytics YOLO models in ROS.
+
+* Setup
+1. Create a ROS workspace to install Ultralytics
+   #+BEGIN_SRC bash
+   mkdir yolo_ws
+   cd yolo_ws
+   ros2 pkg create --build-type ament_python yolo_pkg
+   source install/setup.bash
+   PYTHONUSERBASE=$(ros pkg prefix venv_pkg) pip3 install --user --break-system-packages ultralytics
+   #+END_SRC
+
+2. Create a workspace and clone this repository. Before you build it, source the =yolo_ws=
+
+3. See [[https://nu-msr.github.io/ros_notes/ros2/computer_vision.html]] for more details.
